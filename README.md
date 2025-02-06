@@ -22,7 +22,7 @@ Additionally, you will need to have the indeed dataset from kaggle named 'Indeed
 
 technion onedrive link for the companies_to_scarpe.csv file - https://technionmail-my.sharepoint.com/:f:/g/personal/eran_kirsh_campus_technion_ac_il/Emh99N3eut5Jr2uaEQAGGtUBTXme1J2PHpTP1nKvTg79yw?e=BdOysQ
 
-kaggle link for the indeed dataset - https://technionmail-my.sharepoint.com/:x:/r/personal/eran_kirsh_campus_technion_ac_il/Documents/data_files_project_Skills_to_Success_LinkedIn_Profile_Enhancer/Indeed_kaggle_1.csv?d=w233f401a0d0441a6ab1d6c322eb22a5d&csf=1&web=1&e=7htKq4
+technion onedrive link kaggle dataset - https://technionmail-my.sharepoint.com/:x:/r/personal/eran_kirsh_campus_technion_ac_il/Documents/data_files_project_Skills_to_Success_LinkedIn_Profile_Enhancer/Indeed_kaggle_1.csv?d=w233f401a0d0441a6ab1d6c322eb22a5d&csf=1&web=1&e=7htKq4
 
 
 #### Things to change in the notebook:
