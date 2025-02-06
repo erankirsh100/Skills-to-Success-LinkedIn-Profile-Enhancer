@@ -1,11 +1,11 @@
-# Skills-to-Success-LinkedIn-Profile-Enhancer
+# Skills-to-Success-LinkedIn-Profile-Enhancer 🚀
 
 ## Overview
 
 This repository contains a series of Jupyter notebooks aimed at enhancing LinkedIn profiles by analyzing job-related data, extracting relevant skills, and evaluating skill improvements. The workflow is divided into three main steps: clustering job-related data using KMeans, retrieving relevant skills, and evaluating skill enhancements.
 
 ---
-## 1. Scraping Indeed
+## 1. 🕷️ Scraping Indeed 
 ### What the notebook does:
 The notebook scrapes job postings from Indeed for companies that are in the companies_to_scarpe.csv file.
 Then, it generates skills using calls to google genai api and saves the results.
@@ -45,7 +45,7 @@ technion onedrive link kaggle dataset - https://technionmail-my.sharepoint.com/:
 
 if you did all of the above you should be able to run all the cells in the notebook consecutively and get the final dataset.
 
-## 2. KMeans Communities and Data Analysis
+## 2. 🧩 KMeans Communities and Data Analysis
 
 **File:** `Kmeans_comunities_and_data_Analysis.ipynb`
 
@@ -90,7 +90,7 @@ This notebook consists of two parts:
 
 ---
 
-## 3. Skills Retrieval
+## 3. 🛠️ Skills Retrieval
 
 **File:** `Skills_retrieval.ipynb`
 
@@ -113,7 +113,7 @@ This notebook retrieves skills related to job postings and specific roles. The e
 
 ---
 
-## 4. Evaluation File
+## 4. 📊 Evaluation File
 
 **File:** `Evaluation_file.ipynb`
 
@@ -139,7 +139,7 @@ This notebook evaluates the extracted skills against job requirements to measure
 
 ---
 
-## Usage Instructions
+## 📖 Usage Instructions
 
 1. Run `Kmeans_comunities_and_data_Analysis.ipynb` to cluster job-related data.
 2. Use `Skills_retrieval.ipynb` to extract relevant skills from clustered job roles.
@@ -149,7 +149,7 @@ Ensure all required datasets are correctly linked and update parameters as neede
 
 ---
 
-## Dependencies
+## 📦 Dependencies
 
 Make sure to install the necessary Python libraries before running the notebooks:
 
