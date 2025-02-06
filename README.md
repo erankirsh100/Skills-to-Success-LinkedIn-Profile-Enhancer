@@ -20,9 +20,8 @@ Additionally, you will need to have the indeed dataset from kaggle named 'Indeed
 
 #### links to the datasets needed: 
 
-technion onedrive link for the companies_to_scarpe.csv file - https://technionmail-my.sharepoint.com/:f:/g/personal/eran_kirsh_campus_technion_ac_il/Emh99N3eut5Jr2uaEQAGGtUBTXme1J2PHpTP1nKvTg79yw?e=BdOysQ
+technion onedrive link for folder containing companies_to_scarpe.csv and Indeed_kaggle_1.csv files - https://technionmail-my.sharepoint.com/:f:/g/personal/eran_kirsh_campus_technion_ac_il/Emh99N3eut5Jr2uaEQAGGtUBTXme1J2PHpTP1nKvTg79yw?e=uWgj97
 
-technion onedrive link kaggle dataset - https://technionmail-my.sharepoint.com/:x:/r/personal/eran_kirsh_campus_technion_ac_il/Documents/data_files_project_Skills_to_Success_LinkedIn_Profile_Enhancer/Indeed_kaggle_1.csv?d=w233f401a0d0441a6ab1d6c322eb22a5d&csf=1&web=1&e=7htKq4
 
 
 #### Things to change in the notebook:
@@ -43,7 +42,11 @@ technion onedrive link kaggle dataset - https://technionmail-my.sharepoint.com/:
   API_LIST = ['']
   ```
 
-if you did all of the above you should be able to run all the cells in the notebook consecutively and get the final dataset.
+if you did all of the above you should be able to run all the cells in the notebook consecutively and get the final datasets.
+
+The resulting datasets you will get are:
+- combined_job_listings_1000.parquet
+- combined_job_skills_10000.parquet
 
 ## 2. 🧩 KMeans Communities and Data Analysis
 
@@ -96,20 +99,22 @@ This notebook consists of two parts:
 
 ### Purpose
 
-This notebook retrieves skills related to job postings and specific roles. The extracted skills are used to refine LinkedIn profiles for better alignment with job market demands.
+This notebook, given a user from the LinkedIn dataset, retrieves relevant skills from job descriptions and tools used in the job market. It then filters the skills based on the user's information and expertise to enhance their LinkedIn profile.
 
 ### Data Used
 
-- Output from the KMeans clustering step
-- Job descriptions dataset
-- Skills taxonomy (optional)
+- linkedin_people dataset (users to enhance)
+- scarped jobs dataset (containing jobs, companies, descriptions, and skills)
 
 ### What to Change or Add
 
-- Update retrieval methods to improve skill matching accuracy.
-- Modify filtering criteria to exclude irrelevant or redundant skills.
-- Adjust text processing techniques (e.g., stemming, lemmatization) to enhance results.
-- Ensure correct linkage with the clustering results from the previous step.
+- In the third cell, specify the paths to combined_job_listings_1000.parquet and combined_job_skills_10000.parquet
+
+  ```python
+  job_data_path = '/FileStore/tables/nos_kirsh_ben/combined_job_listings_10000.parquet'
+  job_skill_data_path = '/FileStore/tables/nos_kirsh_ben/combined_job_skills_10000.parquet'
+  ```
+
 
 ---
 
@@ -156,16 +161,3 @@ Make sure to install the necessary Python libraries before running the notebooks
 ```bash
 pip install pandas numpy scikit-learn seaborn matplotlib nltk spark scipy google-generativeai
 ```
-
-Additionally, the following libraries should be imported in the notebooks:
-
-```python
-import pandas as pd
-import re
-import google.generativeai as genai
-import os
-import time
-from scipy.stats import wilcoxon
-import numpy as np
-```
-
