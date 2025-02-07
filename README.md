@@ -48,6 +48,10 @@ The resulting datasets you will get are:
 - combined_job_listings_1000.parquet
 - combined_job_skills_10000.parquet
 
+#### Here you can get them directly without running the notebook:
+
+technion onedrive link for folder containing combined_job_listings_1000.parquet and combined_job_skills_10000.parquet files - https://technionmail-my.sharepoint.com/:f:/r/personal/eran_kirsh_campus_technion_ac_il/Documents/data_files_project_Skills_to_Success_LinkedIn_Profile_Enhancer/scraped%20datasets?csf=1&web=1&e=jhv7BW
+
 ## 2. 🧩 KMeans Communities and Data Analysis
 
 **File:** `Kmeans_comunities_and_data_Analysis.ipynb`
