@@ -146,9 +146,9 @@ This notebook evaluates the extracted skills against job requirements to measure
 
 ## 📖 Usage Instructions
 
-1. Run `Kmeans_comunities_and_data_Analysis.ipynb` to cluster job-related data.
+1. Run `Kmeans_comunities_and_data_Analysis.ipynb` to cluster profiles and get insights.
 2. Use `Skills_retrieval.ipynb` to extract relevant skills from clustered job roles.
-3. Execute `Evaluation_file.ipynb` to assess the extracted skills' relevance.
+3. Execute `Evaluation_file.ipynb` to assess the extracted skills' relevance and importance.
 
 Ensure all required datasets are correctly linked and update parameters as needed to refine results.
 
